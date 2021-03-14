@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group = 'io.github.anoobizzz'
+version = '1.0'
+sourceCompatibility = 1.14
+
+jar {
+    archivesBaseName = 'sjl'
+    archiveVersion = this.version;
+    manifest {
+        attributes(
+                "Premain-Class": "io.github.anoobizzz.SimpleJarLoader"
+        )
+    }
+}
